@@ -1,2 +1,2 @@
-Iptables-persistent
+Iptables-persistents
 iptables is default linux-based firewall. the disadvantages of iptables is the firewall rule that is created by iptables is not persistent. in other words, if server is restarted, all of the rules created by iptables will be removed. so we have to create new firewall rule if the server is restarted. iptables-persistent is relying on the /etc/iptables/rules.v4 file. iptables-persistent will load that file after server is restarted and append the iptables-rule from that file to iptables. there is another apps which is simpler to use named ufw. but ufw also has disadvantage. the disadvantages is it can not create firewall rule protocol other than tcp and udp. so we decided to use iptables persistent along with ufw.
